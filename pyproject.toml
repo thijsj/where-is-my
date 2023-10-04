@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools", "setuptools-scm"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "whereismy"
+authors = [
+    {name = "Thijs Janssen", email = "thijs@thijsj.nl"},
+]
+description = "Where is my server? Don't try to remember, store, add tags and forget."
+readme = "README.md"
+requires-python = ">=3.10"
+keywords = ["remember", "registry"]
+license = {file = "LICENSE"}
+classifiers = [
+    "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+    "Programming Language :: Python :: 3",
+]
+dependencies = [
+    "asyncio",
+    "aiohttp",
+    "selftest",
+]
+dynamic = ["version"]
+
