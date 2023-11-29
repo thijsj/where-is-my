@@ -1,13 +1,16 @@
 
-__all__ = ['web_app']
+__all__ = ['app']
 
-from aiohttp import web
+from starlette.applications import Starlette
+from starlette.responses import PlainTextResponse
+from starlette.routing import Route
 
-async def index(request):
-    return web.Response(text="Welkom thuis!")
+async def homepage(request):
+    return PlainTextResponse('Hello, world!')
 
-
-async def web_app():
-    app = web.Application()
-    app.router.add_get('/', index)
-    return app
+app = Starlette(
+    debug=True,
+    routes=[
+        Route('/', endpoint=homepage),
+    ],
+)

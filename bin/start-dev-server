@@ -1,0 +1,10 @@
+#!/bin/bash
+#
+# Start the development server.
+
+PORT=${1:-8000}
+
+PARENT_DIR=$(dirname $(cd "$(dirname "$0")"; pwd))
+export PYTHONPATH=${PYTHONPATH}:${PARENT_DIR}
+
+hypercorn whereismy.server:app --bind 0.0.0.0:${PORT} --reload

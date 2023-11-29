@@ -21,6 +21,8 @@ dependencies = [
     "aiohttp",
     "selftest",
     "hypercorn",
+    "starlette",
+    "jinja2",
 ]
 dynamic = ["version"]
 
