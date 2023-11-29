@@ -20,6 +20,12 @@ dependencies = [
     "asyncio",
     "aiohttp",
     "selftest",
+    "hypercorn",
 ]
 dynamic = ["version"]
 
+[project.urls]
+Repository = "https://github.com/thijsj/where-is-my"
+
+[tool.setuptools.dynamic]
+version = {attr = "whereismy.__version__.VERSION"}
