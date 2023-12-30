@@ -3,6 +3,9 @@
 ## Working on:
 
  [] Basic setup of project
+ [] What would be the simplest thing todo first?
+    Some ideas:
+      - CLI that can list all known ssh servers? Name and ssh prompt?
 
 ## Ideas:
 
