@@ -1,0 +1,15 @@
+#!/bin/bash
+
+PROMPT="where-is-my"
+mydir=$(cd $(dirname $0) && pwd)
+env_dir=${mydir}/env
+
+if [ -d "${env_dir}" ]; then
+    echo "Environment already exists: ${env_dir}"
+else
+    echo "Creating virtualenv: ${env_dir}"
+    python3 -m venv --prompt ${PROMPT} ${env_dir}
+    source ${env_dir}/bin/activate
+    python3 -m pip install --upgrade pip
+    python3 -m pip install --editable ${mydir}
+fi
