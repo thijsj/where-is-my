@@ -6,6 +6,7 @@
  [] What would be the simplest thing todo first?
     Some ideas:
       - CLI that can list all known ssh servers? Name and ssh prompt?
+      - website that just list all urls with description 
 
 ## Ideas:
 

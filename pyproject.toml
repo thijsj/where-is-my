@@ -19,15 +19,18 @@ classifiers = [
 dependencies = [
     "asyncio",
     "aiohttp",
-    "selftest",
     "hypercorn",
     "starlette",
     "jinja2",
+    "pytest",
 ]
 dynamic = ["version"]
 
 [project.urls]
-Repository = "https://github.com/thijsj/where-is-my"
+repository = "https://github.com/thijsj/where-is-my"
+
+[project.scripts]
+whereismy = "whereismy.cli:main"
 
 [tool.setuptools.dynamic]
 version = {attr = "whereismy.__version__.VERSION"}

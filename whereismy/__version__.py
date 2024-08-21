@@ -1,5 +1,3 @@
+__all__ = ["VERSION"]
 
-__all__ = ['VERSION']
-
-VERSION = '0.0.1a1'
-
+VERSION = "0.0.1a1"
