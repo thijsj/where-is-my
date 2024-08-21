@@ -14,10 +14,26 @@ See [TODO](doc/TODO.md)
 
 - Store urls, ssh logins, etc.
 
-- CLI to search and open urls in browser or ssh login in terminal.
+- CLI to ssh login in terminal.
+```
+   whereismy project development --ssh
+```
 
-   whereismy ssh project development
+- CLI to print list of project
+```
+   whereismy project
+```
 
+```
+development (ssh)
+development-site (web)
+production (ssh)
+```
+
+- CLI to go to website
+```
+   whereismy project development-site --web
+```
 
 
 
