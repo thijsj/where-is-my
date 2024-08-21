@@ -10,4 +10,14 @@ Pretty much very pre-alpha. Only the idea is presented here.
 
 See [TODO](doc/TODO.md)
 
+# Ideas of features
+
+- Store urls, ssh logins, etc.
+
+- CLI to search and open urls in browser or ssh login in terminal.
+
+   whereismy ssh project development
+
+
+
 

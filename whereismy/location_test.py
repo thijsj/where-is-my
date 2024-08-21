@@ -1,6 +1,7 @@
 from .location import Location
 import json
 
+
 def test_location(tmp_path):
     l = Location("https://www.google.com")
     l.name = "Google"
